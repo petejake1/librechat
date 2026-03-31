@@ -1,0 +1,14 @@
+mcpServers:
+  my-new-server: Flexmls MCP                 # Unique key/name for this server
+    type: streamable-http         # or sse, stdio, websocket
+    url: https://mcp.flexmls.com/mcp   # or http://localhost:port/sse
+    timeout: 60000                # Optional, in ms (default often 60s)
+    # For stdio/local servers (common with npx):
+    # command: npx
+    # args:
+    #   - -y
+    #   - "@some/mcp-package"
+    # env:
+    #   API_KEY: "${YOUR_ENV_VAR}"   # Pull from .env
+    # headers:                       # Optional auth
+    #   Authorization: "Bearer {{TOKEN}}"
